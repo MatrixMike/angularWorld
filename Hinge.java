@@ -34,6 +34,7 @@ public class Hinge extends Circle
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private static double angleChange = 0.05;
+    private static int yTextCoord = 350;
     public void act() 
     {
 
@@ -41,11 +42,11 @@ public class Hinge extends Circle
             angle+=angleChange;  // change looks small here but is about 4 degrees - Are we using radians etc? 
         else if(Greenfoot.isKeyDown("left"))
             angle-=angleChange;
-        int newX = (int)(centerX + rotationRadius* Math.cos(angle));
+        int newX = (int)(centerX + rotationRadius * Math.cos(angle));
         int newY = (int)(centerY + rotationRadius * Math.sin(angle));
         setLocation(newX, newY);  // found the circle end of the Hinge
-        myWorld.showText("Angle = " + Math.abs(Math.round(Math.toDegrees(angle))%360), 150, 350);
+        myWorld.showText("Angle = " + Math.abs(Math.round(Math.toDegrees(angle))%360), 150, yTextCoord);
         int compression = getX() - centerX;
-        myWorld.showText("Compression = " + compression, 350, 350);  // could add a cylinder around the piston 
+        myWorld.showText("Compression = " + compression, 350, yTextCoord);  // could add a cylinder around the piston 
     }    
 }
