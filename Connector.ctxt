@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Connector
+comment0.text=\n\ Write\ a\ description\ of\ class\ LineOfSight\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=w\ h\ p
+comment1.target=Connector(greenfoot.World,\ greenfoot.Actor,\ greenfoot.Actor)
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ LineOfSight\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ buttons\ get\ pressed\ in\ the\ environment.\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3
