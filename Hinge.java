@@ -22,9 +22,11 @@ public class Hinge extends Circle
     public void addedToWorld(World w){
         myWorld = w;
         rotationRadius = Math.hypot(getX()-centerX, getY()-centerY);
+        //The java.lang.Math.hypot(double x, double y) returns sqrt(x2 +y2) without 
+        // intermediate overflow or underflow. Special cases: 
         double opposite = getY()-centerY;
         double sinAngle = opposite/rotationRadius;
-        angle = Math.asin(sinAngle) * Math.signum(getX()-centerX);
+        angle = Math.asin(sinAngle) * Math.signum(getX()-centerX);  // signum returns the sign * 1.0
     }
     /**
      * Act - do whatever the Hinge wants to do. This method is called whenever
@@ -41,6 +43,6 @@ public class Hinge extends Circle
         setLocation(newX, newY);
         myWorld.showText("Angle = " + Math.abs(Math.round(Math.toDegrees(angle))%360), 150, 350);
         int compression = getX() - centerX;
-        myWorld.showText("Compression = " + compression, 350, 350);
+        myWorld.showText("Compression = " + compression, 350, 350);  // could add a cylinder around the piston 
     }    
 }

@@ -19,12 +19,13 @@ public class Piston extends Actor
         this.length = length;
         this.width = width;
         GreenfootImage myImage = new GreenfootImage(length, width);
-        myImage.setColor(Color.BLACK);
+        myImage.setColor(Color.YELLOW);
         myImage.fillRect(0,0,length - 1, width - 1);
+        // have now created a black (?) rectangle 
         setImage(myImage);
         int startX = hinge.getX() + 300 - length/2;
         int startY = hinge.getY();
-        myWorld.addObject(this, startX, startY);
+        myWorld.addObject(this, startX, startY); // now placed the middle of a piston 
         
     }
     /**

@@ -30,7 +30,7 @@ public class AngularWorld extends World
         Circle bigCircle = new Circle(150, Color.BLUE);
         addObject(bigCircle, 100, 200);
         Square bigSquare = new Square( 120, Color.RED);
-        addObject(bigSquare, 400, 100);
+        addObject(bigSquare, 400, 200);
         Hinge hinge = new Hinge(30, Color.BLACK, bigCircle.getX(), bigCircle.getY());
         addObject(hinge, 50, 200);
         Piston piston = new Piston(this, hinge, 100, 20);
