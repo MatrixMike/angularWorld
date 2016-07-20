@@ -9,6 +9,9 @@ import java.awt.Color;
 public class Square extends Actor
 {
     int sideLength;
+    // Square myTest = new Square();   
+    // IntegerMath addition = (a,b) -> a + b;
+
     public Square(int sideLength, Color color){
         GreenfootImage myImage = new  GreenfootImage(sideLength, sideLength);
         myImage.setColor(color.RED);
@@ -26,10 +29,14 @@ public class Square extends Actor
     {
         // Add your action code here.
         // would need to draw a specific rectangle - see how circle is used
+        
+
     }   
 
     /**
      * added the following Integermath and operateBinary to check if compiler supports these features
+     * 20July2016
+     * looks like I added a lambda in Mikemain
      */
     interface IntegerMath {
         int operation(int a, int b);
@@ -39,5 +46,13 @@ public class Square extends Actor
         return op.operation(a, b);
     }
 
+    public static void Mikemain() {
+        int miketest;
+        Square myTest = new Square(10 ,Color.GREEN );  
+        IntegerMath addition = (a,b) -> a + b ;
+                IntegerMath subtraction = (a,b) -> a - b ;
+                miketest = myTest.operateBinary(40,2,addition);
+            //    System.out.println("40 + 2 = ", + myTest.operateBinary(40,2,addition));
+    }
 }
 
