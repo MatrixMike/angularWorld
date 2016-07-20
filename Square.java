@@ -13,18 +13,19 @@ public class Square extends Actor
     // IntegerMath addition = (a,b) -> a + b;
 
     public Square(int sideLength, Color color){
-           int miketest;
-          //    Square myTest = new Square(10 ,Color.GREEN );  
-                IntegerMath addition = (a,b) -> a + b ;
-        GreenfootImage myImage = new  GreenfootImage(sideLength, sideLength);
+        int miketest;
+        //    Square myTest = new Square(10 ,Color.GREEN );  
+        IntegerMath addition = (a,b) -> a + b ;
+        miketest = operateBinary(90,70,addition);
+        GreenfootImage myImage = new  GreenfootImage(miketest, sideLength);
         myImage.setColor(color.RED);
         myImage.fillRect(0, 0, myImage.getWidth()-1, myImage.getHeight()-1);
         myImage.setColor(color.GREEN);
-        myImage.drawString("Square", 400, 400);
-          // miketest = myTest.operateBinary(300,100,addition);
-          miketest = operateBinary(300,100,addition);
-                      myImage.drawString("Square", 400, miketest);
-              
+        //myImage.drawString("Square", 400, 400);
+        // miketest = myTest.operateBinary(300,100,addition);
+        miketest = operateBinary(200,100,addition);
+        myImage.drawString("Square", 400, miketest);
+
         this.setImage(myImage);
     }
 
@@ -57,9 +58,12 @@ public class Square extends Actor
         int miketest;
         Square myTest = new Square(10 ,Color.GREEN );  
         IntegerMath addition = (a,b) -> a + b ;
-                IntegerMath subtraction = (a,b) -> a - b ;
-                miketest = myTest.operateBinary(40,2,addition);
-            //    System.out.println("40 + 2 = ", + myTest.operateBinary(40,2,addition));
+        IntegerMath subtraction = (a,b) -> a - b ;
+        miketest = myTest.operateBinary(40,2,addition);
+        //    System.out.println("40 + 2 = ", + myTest.operateBinary(40,2,addition));
+    }
+
+    public static void Mikemain2() {
     }
 }
 
