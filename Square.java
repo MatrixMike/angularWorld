@@ -13,11 +13,18 @@ public class Square extends Actor
     // IntegerMath addition = (a,b) -> a + b;
 
     public Square(int sideLength, Color color){
+           int miketest;
+          //    Square myTest = new Square(10 ,Color.GREEN );  
+                IntegerMath addition = (a,b) -> a + b ;
         GreenfootImage myImage = new  GreenfootImage(sideLength, sideLength);
         myImage.setColor(color.RED);
         myImage.fillRect(0, 0, myImage.getWidth()-1, myImage.getHeight()-1);
         myImage.setColor(color.GREEN);
         myImage.drawString("Square", 400, 400);
+          // miketest = myTest.operateBinary(300,100,addition);
+          miketest = operateBinary(300,100,addition);
+                      myImage.drawString("Square", 400, miketest);
+              
         this.setImage(myImage);
     }
 
@@ -29,7 +36,7 @@ public class Square extends Actor
     {
         // Add your action code here.
         // would need to draw a specific rectangle - see how circle is used
-        
+        Mikemain();
 
     }   
 
