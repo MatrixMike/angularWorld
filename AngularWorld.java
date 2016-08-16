@@ -19,31 +19,32 @@ public class AngularWorld extends World
         super(600, 400, 1); 
 
         prepare();
+        // IntegerMath addition = (a,b) -> a + b ;
+        // int miketest = operateBinary(90,70,addition);
     }
 
     /**
      * Prepare the world for the start of the program. That is: create the initial
-     * objects and add them to the world.
+     * objects and add them to the world. Important action using Connector - taking two objects AND world 
      */
-    private void prepare()
+    public void prepare()    // was private
     {
         Circle bigCircle = new Circle(150, Color.BLUE);
         addObject(bigCircle, 100, 200);
+
         Square bigSquare = new Square( 120, Color.RED);
         addObject(bigSquare, 400, 200);
+
+        // now create a black dot size 30 
         Hinge hinge = new Hinge(30, Color.BLACK, bigCircle.getX(), bigCircle.getY());
-        addObject(hinge, 50, 200);
+        // getX : Return the x-coordinate of the actor's current location. 
+        // The value returned is the horizontal index of the actor's cell in the world.
+        addObject(hinge, 50, 200);  // add object at given co-ords
+
         Piston piston = new Piston(this, hinge, 100, 20);
         Connector c = new Connector(this, hinge, piston);
     }
 }
-
-
-
-
-
-
-
 
 
 

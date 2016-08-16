@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 /**
- * Write a description of class Square here.
+ * Class Square was created to test my understanding of creating an object (in Java)
+ * The square is used as the cylinder block in the piston demo
  * 
- * @author (Mike Hewitt) 
- * @version (30 June 2016)
+ * @author Mike Hewitt
+ * @version 30 June 2016
  */
 public class Square extends Actor
 {
@@ -50,10 +51,24 @@ public class Square extends Actor
         int operation(int a, int b);
 
     }
+
+    /**
+     * operateBinary() related to lambda operation
+     * 
+     * @param  a one of two integers to operate upon
+     * @param  b one of two integers to operate upon
+     * @param  op the ....
+     * @author  Mike Hewitt
+     * @version 1.1
+     * @return the result of the action of the operation on the two inputs
+     */
     public int operateBinary(int a, int b, IntegerMath op) {
         return op.operation(a, b);
     }
-
+/**
+ * setting up and using pair of lambdas
+ * 
+ */
     public static void Mikemain() {
         int miketest;
         Square myTest = new Square(10 ,Color.GREEN );  

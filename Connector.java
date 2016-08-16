@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 /**
- * Write a description of class LineOfSight here.
+ * Connector takes as parameters the World and two Actors {all objects} 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mike Hewitt (some mods and explicit understanding by me) 
+ * @version 16 August 2016
  */
 public class Connector extends Actor
 {
@@ -16,8 +16,12 @@ public class Connector extends Actor
     int pistonY;
     GreenfootImage myImage;
     /**
-     * Act - do whatever the LineOfSight wants to do. This method is called whenever
+     * Act - do whatever the Connector wants to do. This method is called whenever
      * the 'Act' or 'Run' buttons get pressed in the environment.
+     * 
+     * @param w what is world
+     * @param h what is Actor
+     * @param p what is Actor
      */
     public Connector (World w, Actor h, Actor p)
     {

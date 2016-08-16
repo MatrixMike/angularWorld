@@ -23,18 +23,30 @@ public class Piston extends Actor
         myImage.fillRect(0,0,length - 1, width - 1);
         // have now created a black (?) rectangle 
         setImage(myImage);
-        int startX = hinge.getX() + 300 - length/2;
+        // created the image, now to add it at a given position
+        int startX = nX(); // hinge.getX() + 300 - length/2;
         int startY = hinge.getY();
         myWorld.addObject(this, startX, startY); // now placed the middle of a piston 
-        
+
     }
+
     /**
      * Act - do whatever the Piston wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+     * Compute position of 'thing' and place it with setLocation 
      */
     public void act() 
     {
-        int newX = hinge.getX() + 300 - length/2;
+        int newX = nX() ; // hinge.getX() + 300 - length/2;
         setLocation(newX, getY());
     }    
+    /**
+     * nX() factored out a common expression
+     * @author  Mike Hewitt
+     * @version 1.1
+     * @return result of common expression
+     */
+    public int nX (){
+        return hinge.getX() + 300 - length/2;
+    }
 }
