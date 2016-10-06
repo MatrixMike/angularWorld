@@ -3,8 +3,8 @@ import java.awt.Color;
 /**
  * Write a description of class Hinge here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mod by Mike JH
+ * @version (6 October 2016)
  */
 public class Hinge extends Circle
 {

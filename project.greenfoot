@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon Jul 18 13:44:33 AEST 2016
+#Thu Oct 06 14:27:35 AEDT 2016
 target4.type=ClassTarget
 dependency3.from=Piston
 target3.height=50
@@ -22,8 +22,8 @@ dependency4.from=AngularWorld
 mainWindow.width=850
 dependency4.type=UsesDependency
 class.Hinge.superclass=Circle
-target3.editor.y=42
 target2.width=80
+target3.editor.y=42
 target3.editor.x=40
 target5.name=Piston
 target5.editor.width=900
@@ -51,9 +51,9 @@ dependency5.to=Connector
 target1.showInterface=false
 target4.editor.width=900
 class.Square.image=brick.png
-target5.showInterface=false
 dependency6.to=Square
 class.Connector.superclass=greenfoot.Actor
+target5.showInterface=false
 target6.width=80
 target5.naviview.expanded=true
 target6.height=50
